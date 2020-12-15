@@ -1,0 +1,74 @@
+/*------- header -------- */
+header {
+    height: 50px;
+    border-bottom: 1px solid #c0c0c0;
+    margin-top: 15px;
+}
+
+.header_text {
+    font-family: cursive;
+    font-size: 30px;
+    /* margin-top: 0; */
+    margin-left: 20px;
+    color: #504946;
+}
+/*------- header -------- */
+
+/*------- main -------- */
+/*-- section --*/
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    text-align: center;
+    font-family: Hiragino Mincho ProN;
+}
+
+.section_left {
+    padding: 30px;
+    padding-left: 0;
+}
+
+.section_left h2 {
+    font-size: 30px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.section_left p {
+    margin: 10px;
+}
+
+.section_img {
+    width: 500px;
+    height: 400px;
+}
+/*-- section --*/
+/*-- nav --*/
+nav {
+    height: 60px;
+    background-color: #eebbcb;
+    margin-top: 80px;
+    font-family: Georgia;
+}
+
+nav ul {
+    overflow: hidden;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+nav li {
+    float: left;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+nav li a {
+    color: black;
+}
+
+
+/*-- nav --*/
