@@ -134,6 +134,10 @@ nav li a {
     margin-bottom:-1px;
 }
 
+.tab-nav li .active {
+    border-right: 1px solid #ddd;
+}
+
 .tab-content{
     width: 1100px;
     height: 400px;
@@ -161,7 +165,7 @@ nav li a {
 
 
 /*-- footer --*/
-footer {
+.footer_nav {
     height: 50px;
     border-top: 1px solid #c0c0c0;
     text-align: center;
@@ -170,7 +174,7 @@ footer {
     font-family: Hiragino Mincho ProN;
 }
 
-footer p {
+.footer_nav p {
     color: #504946;
     margin-right: 20px;
     margin-top: 10px;
