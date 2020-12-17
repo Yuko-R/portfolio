@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/portfolio.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/9e1bf99b51.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script defer src="portfolio.js"></script>
 <body>
     <!---------- header ------------->
     <header>
+        <div class="header_1">
     <!-- header left -->
-        <div class="header_text">Self Introduction</div>
+            <p class="header_text">Self Introduction</p>
+    <!-- header right -->
+            <ul class="header_right">
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-snapchat-ghost"></i></li>
+                <li><i class="fas fa-fire-alt"></i></li>
+            </ul>
+        </div>
     </header>
     <!---------- header ------------->
     <!---------- main ------------->
@@ -26,7 +32,12 @@
         <section class="section_1">
             <div class="section_left">
                 <h2>About me</h2>
-                <p>bbbbbbbb bbbbbb bbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbb bbbbbb</p>
+                <ul>
+                    <li><span>NAME :</span> Yuko Robinson</li>
+                    <li><span>BIRTHDAY :</span> November 13th</li>
+                    <li><span>FROM :</span> Okinawa Japan</li>
+                    <li><span>FAVORITE :</span> Sweets, Photoshoot, Adventure</li>
+                </ul>
             </div>
             <div class="section_right"></div>
                 <img class="section_img" src="img/0B358A9B-3CEE-4034-98BB-FB832FC6C0E4_1_105_c.jpeg" alt="">
@@ -51,7 +62,12 @@
         <section class="section_2">
             <div>
                 <h2>SUMMARY</h2>
-                <p>bbbbbbbb bbbbbb bbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbb bbbbbb</p>
+                <div class="summary_text">
+                    <p>I'm born from small island "Okinawa".</p>
+                    <p>I grow up with beautiful ocean, nature and...</p>
+                    <p class="summary_love hide">LOVE</p>
+                    <p>I want to share </p>
+                </div>
             </div>
         </section>
         <section class="slider">
@@ -62,17 +78,20 @@
                              <img src="img/AD634E3A-6F57-4F6C-8635-C6EE1B65795D.jpeg">
                         </div>
                         <div class="carousel-item">
-                             <img src="nav2.jpg">
+                             <img src="img/B5E4AE8E-CA75-4A60-9059-0752501A01DE_1_105_c.jpeg">
                         </div>
                         <div class="carousel-item">
-                             <img src="nav3.jpg">
+                             <img src="img/7589936592_IMG_0139.jpeg">
                         </div>
                         <div class="carousel-item">
-                             <img src="nav4.jpeg">
+                             <img src="img/2C0A8994-6684-4468-B348-6E191A38FF75.jpeg">
                         </div>
                         <div class="carousel-item">
-                             <img src="nav5.jpg">
+                             <img src="img/3555B997-AE0A-48D3-A290-236A950A85DA.jpeg">
                         </div>
+                        <div class="carousel-item">
+                            <img src="img/E48B10E7-8B13-46C3-97CE-A886F78027DF.jpeg">
+                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -82,8 +101,8 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
-                  </div>
                 </div>
+            </div>
         </section>
         <section class="section_3">
             <div class="margin-left">
@@ -111,10 +130,18 @@
     <!---------- main ------------->
     <!---------- footer ------------->
     <footer>
+        <div class="footer_text">
+            <p class="footer_fade hide">bbbbbbbb bbbbbb bbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbb bbbbbb<br>oooooooooooooooooooooooooooooooooo<br>oooooooooooooooooooooooooooooo<br>ssssssssssssssssssssssssssss</p>
+        </div>
         <div class="footer_nav">
             <p>Produce by Yuko Robinson</p>
         </div>
     </footer>
     <!---------- footer ------------->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="portfolio.js"></script>
 </body>
 </html>

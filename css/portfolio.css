@@ -5,12 +5,38 @@ header {
     margin-top: 15px;
 }
 
+.header_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header_text {
     font-family: cursive;
     font-size: 30px;
     /* margin-top: 0; */
     margin-left: 20px;
     color: #504946;
+}
+
+.header_right {
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    margin-top: 7px;
+    color: #504946;
+}
+
+.header_right li {
+    float: left;
+    padding-right: 20px;
+}
+
+.header_right li:last-child {
+    padding-right: 0;
+}
+
+.header_right li i {
+    font-size: 30px;
 }
 /*------- header -------- */
 
@@ -30,13 +56,23 @@ section {
 }
 
 .section_left h2 {
-    font-size: 30px;
+    font-size: 40px;
     margin: 10px;
     margin-bottom: 30px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
 }
 
-.section_left p {
-    margin: 10px;
+.section_left ul {
+    font-size: 25px;
+}
+
+.section_left ul li {
+    padding: 10px;
+}
+
+.section_left span {
+    color: #e95464;
 }
 
 .section_img {
@@ -44,6 +80,7 @@ section {
     height: 400px;
 }
 /*-- section 1 --*/
+
 /*-- nav --*/
 nav {
     height: 60px;
@@ -70,34 +107,47 @@ nav li a {
     color: black;
 }
 /*-- nav --*/
+
 /*-- section 2 --*/
 .section_2 {
-    height: 300px;
+    height: 500px;
 }
 
 .section_2 h2 {
-    font-size: 30px;
+    font-size: 40px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
 }
 
-.section_2 p {
+.summary_text {
     margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+.summary_love {
+    font-size: 70px;
+    letter-spacing: 40px;
+}
+
+.summary_love {
+    transition: all 100s ease;
+}
+  
+.summary_love.hide {
+    /* opacity: 0; */
+    display: none;
 }
 /*-- section 2 --*/
+
 /*-- slider --*/
-.slider {
-
-}
-
 .slider img {
-    width: 1200px;
-    height: 650px;
+    width: 1300px;
+    height: 800px;
 }
-
-
-
-
-
 /*-- slider --*/
+
 /*-- section_3 --*/
 .clearfix::after {
     content: "";
@@ -156,15 +206,21 @@ nav li a {
 }
 /*-- section_3 --*/
 
-
-
-
-
-
-
-
-
 /*-- footer --*/
+.footer_text {
+    height: 200px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer_fade {
+    transition: all 3s ease;
+}
+  
+.footer_fade.hide {
+    opacity: 0;
+}
+
 .footer_nav {
     height: 50px;
     border-top: 1px solid #c0c0c0;
