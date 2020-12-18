@@ -65,16 +65,17 @@ section {
 }
 
 .section_left ul {
-    font-size: 25px;
+    font-size: 20px;
+    padding-right: 20px;
 }
 
 .section_left ul li {
     padding: 10px;
 }
 
-.section_left span {
+/* .section_left span {
     color: #e95464;
-}
+} */
 
 .section_img {
     width: 500px;
@@ -215,9 +216,15 @@ nav li a {
 
 /*-- footer --*/
 .footer_text {
-    height: 200px;
+    height: 250px;
     text-align: center;
     margin-top: 40px;
+    font-size: 25px;
+    font-family: Hiragino Mincho ProN;
+}
+
+.footer_text p {
+    margin-top: 15px;
 }
 
 .footer_fade {
@@ -226,6 +233,11 @@ nav li a {
   
 .footer_fade.hide {
     opacity: 0;
+}
+
+.thanks{
+    font-size: 60px;
+    color: #e73562;
 }
 
 .footer_nav {
@@ -243,3 +255,92 @@ nav li a {
     margin-top: 10px;
 }
 /*-- footer --*/
+
+/*-- responsive --*/
+@media screen and (max-width: 480px){
+    body{
+      min-width: 375px;
+    }
+
+    h2 {
+        color: #aaaab0;
+    }
+
+    .header_right {
+        display: none;
+    }
+    
+    .section_1 {
+        display: inline;
+    }
+
+    .section_left h2 {
+        width: 365px;
+    }
+
+    .section_img {
+        width: 375px;
+        height: 300px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .section_2 div {
+        height: 350px;
+        /* margin-bottom: -100px; */
+    }
+
+    .summary_text p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .summary_text .summary_love {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .slider {
+        margin-top: -10px;
+    }
+
+    .slider img{
+        width: 375px;
+        height: 300px;
+    }
+
+    .tab-content {
+        width: 375px;
+        height: 300px;
+    }
+
+    .tab-nav li {
+        width: 150px;
+    }
+
+    .tab-nav li a {
+        padding-top: 10px;
+    }
+
+    .tab-nav li a.active{
+        width: 150px;
+        font-size: 15px;
+        word-break: normal;
+    }
+
+    .footer_text {
+        height: 200px;
+    }
+
+    .footer_text p {
+        font-size: 20px;
+    }
+
+    .footer_text p.thanks {
+        font-size: 30px;
+    }
+
+
+    }
